@@ -1,0 +1,10 @@
+{
+  "original_file": "coarsening_with_superseded_restart_tail.e",
+  "delivered_file": "coarsening.e",
+  "final_solver_time": 60000.0,
+  "kept_records": 231,
+  "removed_superseded_times": [
+    60873.968092144016
+  ],
+  "operation": "Copy all original metadata and fields unchanged; remove only records after the final accepted solver time."
+}

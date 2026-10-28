@@ -1,0 +1,13 @@
+name: moose-post
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - netcdf4
+  - pillow
+  - pip

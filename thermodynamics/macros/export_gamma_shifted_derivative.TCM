@@ -1,0 +1,11 @@
+@@ Reuse saved STEP results; subtract the same affine reference from both phases.
+read D:/MOOSEcalc/thermodynamics/raw/gamma_scan_1000K.POLY3
+enter_symbol function DMUREF=MU(AL)-MU(NI)+135156.45;
+enter_symbol table GDERIV2=X(AL),DGM,GRES,DMUREF;
+tabulate GDERIV2 D:/MOOSEcalc/thermodynamics/raw/gamma_shifted_1000K.txt
+@@ Restore physical, unrestricted target equilibrium for subsequent interactive use.
+read D:/MOOSEcalc/thermodynamics/raw/equilibrium_scan_1000K.POLY3
+advanced_options global_minimization Y 2000
+set_condition T=1000 P=101325 N=1 X(AL)=0.14
+compute_equilibrium
+set_interactive

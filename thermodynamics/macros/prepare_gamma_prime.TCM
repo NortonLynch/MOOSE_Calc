@@ -1,0 +1,10 @@
+@@ Restore ordered equilibrium branch and suppress every other composition set.
+read D:/MOOSEcalc/thermodynamics/raw/equilibrium_scan_1000K.POLY3
+set_condition T=1000 P=101325 N=1 X(AL)=0.14
+compute_equilibrium
+change_status phase *=suspended
+change_status phase FCC_L12#2=entered 1
+set_condition X(AL)=0.237162
+compute_equilibrium -
+list_equilibrium D:/MOOSEcalc/thermodynamics/raw/gamma_prime_reference_1000K.txt AXNSD
+set_interactive

@@ -1,0 +1,35 @@
+ Output from POLY-3, equilibrium =     1, label A0  , database: NIDEMO  
+
+ Conditions:
+ T=1000, P=101325, N=1, X(AL)=0.14
+ DEGREES OF FREEDOM 0
+
+ Temperature   1000.00 K (   726.85 C),  Pressure  1.013250E+05
+ Number of moles of components  1.00000E+00,  Mass in grams  5.42509E+01
+ Total Gibbs energy -6.63477E+04,  Enthalpy -1.49737E+03,  Volume  6.94291E-06
+
+ Component               Moles       M-Fraction  Activity   Potential  Ref.stat
+ AL                      1.4000E-01  1.4000E-01 2.9048E-10 -1.8258E+05 SER     
+ NI                      8.6000E-01  8.6000E-01 3.3327E-03 -4.7426E+04 SER     
+ 
+ FCC_L12#1                DISORD Status ENTERED   Driving force  0.0000E+00
+ Moles 8.6352E-01, Mass 4.7267E+01, Volume fraction 8.6139E-01  Mole fractions:
+ AL  1.24644E-01  NI  8.75356E-01
+ Constitution:
+ Sublattice  1,  Number of sites  7.5000E-01
+ AL  1.24644E-01  NI  8.75356E-01
+ Sublattice  2,  Number of sites  2.5000E-01
+ AL  1.24644E-01  NI  8.75356E-01
+ Sublattice  3,  Number of sites  1.0000E+00
+ VA  1.00000E+00
+ 
+ FCC_L12#2                ORD    Status ENTERED   Driving force  0.0000E+00
+ Moles 1.3648E-01, Mass 6.9835E+00, Volume fraction 1.3861E-01  Mole fractions:
+ AL  2.37162E-01  NI  7.62838E-01
+ Constitution:
+ Sublattice  1,  Number of sites  7.5000E-01
+ AL  5.88246E-04  NI  9.99412E-01
+ Sublattice  2,  Number of sites  2.5000E-01
+ AL  9.46883E-01  NI  5.31170E-02
+ Sublattice  3,  Number of sites  1.0000E+00
+ VA  1.00000E+00

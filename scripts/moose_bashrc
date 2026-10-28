@@ -1,0 +1,7 @@
+source "$HOME/.bashrc"
+source "$HOME/miniforge3-moose/etc/profile.d/conda.sh"
+conda activate moose
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+printf '\nMOOSE environment ready. Project: %s\n' "$PWD"

@@ -1,0 +1,20 @@
+{
+  "purpose": "Future Ni-Al gamma-prime diffusion-driven coarsening model",
+  "temperature_K": 1000.0,
+  "pressure_Pa_assumption": 101325.0,
+  "bulk_mole_fraction": {"NI": 0.86, "AL": 0.14},
+  "thermo_calc_status": "Educational 2026b installed; thermodynamics exported and validated via Console Mode",
+  "thermodynamic_database": {"name": "NIDEMO", "version": "2.0"},
+  "mobility_database": {"name": "MNIDEMO", "status": "installed; not evaluated or exported in this thermodynamic task"},
+  "phase_names": {"gamma_equilibrium": "FCC_L12#1 (DISORD)", "gamma_single_phase": "DIS_FCC_A1", "gamma_prime": "FCC_L12#2 (ORD)"},
+  "thermodynamic_data_directory": "thermodynamics/ni_al_1000K",
+  "equilibrium_x_Al": {"gamma": 0.124644, "gamma_prime": 0.237162},
+  "equilibrium_gamma_prime_volume_fraction": 0.138609,
+  "interface_energy_J_per_m2": {"value": 0.02, "status": "illustrative reference assumption authorized by user"},
+  "molar_volume_m3_per_mol": {"gamma_at_equilibrium": 6.92577e-6, "gamma_prime_at_equilibrium": 7.05137e-6, "common_model_reference": 7e-6},
+  "diffusion_data": {"matrix_chemical_diffusivity_m2_s": 1e-18, "status": "illustrative reference assumption; not extracted from MNIDEMO"},
+  "length_scale_m": 1e-9,
+  "time_scale_s": {"value": 1, "status": "reference scaling only; not validated against physical aging time"},
+  "phase_field_result": "results/ni_al_coarsening/coarsening.e",
+  "note": "Reference-parameter 2D KKS-equivalent coarsening demonstration completed. Common molar-volume approximation 7e-6 m3/mol, local quadratic thermodynamics; no elastic coherency. Physical kinetics and numerical convergence require further validation."
+}

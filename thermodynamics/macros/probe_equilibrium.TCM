@@ -1,0 +1,18 @@
+@@ Ni-Al equilibrium probe; molar composition, SI units.
+set-echo
+go data
+switch_database NIDEMO
+define_system NI AL
+get_data
+go poly
+set_condition T=1000 P=101325 N=1 X(AL)=0.14
+enter_symbol function GMOL=GM;
+enter_symbol function MUAL=MU(AL);
+enter_symbol function MUNI=MU(NI);
+enter_symbol function DGM=MU(AL)-MU(NI);
+enter_symbol function VMOL=VM;
+compute_equilibrium
+evaluate_functions *
+list_equilibrium D:/MOOSEcalc/thermodynamics/raw/equilibrium_1000K_xAl014.txt AXNSD
+save D:/MOOSEcalc/thermodynamics/raw/equilibrium_1000K_xAl014
+set_interactive

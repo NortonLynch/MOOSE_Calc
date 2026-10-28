@@ -1,0 +1,99 @@
+{
+  "purpose": "Qualitative diffusion-mediated Ostwald ripening; reference kinetic parameters explicitly authorized by user",
+  "temperature_K": 1000,
+  "bulk_x_Al": 0.14,
+  "domain_nm": [
+    96.0,
+    96.0
+  ],
+  "mesh_elements": [
+    96,
+    96
+  ],
+  "initial_particles_center_x_y_radius_nm": [
+    [
+      24.0,
+      24.0,
+      9.2
+    ],
+    [
+      72.0,
+      24.0,
+      9.7
+    ],
+    [
+      24.0,
+      72.0,
+      10.3
+    ],
+    [
+      72.0,
+      72.0,
+      10.8
+    ]
+  ],
+  "thermodynamics": {
+    "source": "Thermo-Calc Educational 2026b / NIDEMO 2.0",
+    "approximation": "Local quadratic phase free energies about the CALPHAD common tangent; identical affine reference removed",
+    "equilibrium_x_Al": [
+      0.124644,
+      0.237162
+    ],
+    "fits": {
+      "gamma": {
+        "curvature_J_mol": 347972.9999999997,
+        "fit_half_range_x_Al": 0.00101,
+        "fit_points": 5
+      },
+      "gamma_prime": {
+        "curvature_J_mol": 424347.39999999956,
+        "fit_half_range_x_Al": 0.00101,
+        "fit_points": 5
+      }
+    }
+  },
+  "reference_parameters": {
+    "interface_energy_J_m2": 0.02,
+    "interface_width_10_90_m": 4E-09,
+    "common_molar_volume_m3_mol": 7E-06,
+    "matrix_chemical_diffusivity_m2_s": 1E-18,
+    "interface_kinetic_L_dimensionless": 10.0
+  },
+  "scales": {
+    "length_m": 1E-09,
+    "molar_energy_J_mol": 1000.0,
+    "energy_density_J_m3": 142857142.85714287,
+    "time_s": 1.0
+  },
+  "dimensionless": {
+    "Ag": 347.97299999999973,
+    "Ap": 424.34739999999954,
+    "barrier": 0.46141716124060606,
+    "kappa_eta": 0.7646009503665432,
+    "M": 0.0028737861845602986,
+    "L": 10.0
+  },
+  "initial": {
+    "mean_c": 0.14,
+    "mean_h": 0.1377438827330517,
+    "mu_dimensionless": -0.050906008752482135
+  },
+  "limitations": [
+    "2D circles represent cylinders, not quantitative 3D spherical ripening",
+    "No coherent elastic energy or crystallographic variants",
+    "Dref and sigma are illustrative reference assumptions, not extracted from MNIDEMO or fitted to experiment",
+    "No validated physical aging-time prediction",
+    "Four nm diffuse interface is a numerical regularization",
+    "Local quadratic free energies replace the full CALPHAD curves"
+  ],
+  "numerical_settings": {
+    "end_time_star": 60000,
+    "dt_max": 400,
+    "nl_max_its": 30,
+    "adaptive_optimal_iterations": 20,
+    "exodus_step_interval": 5,
+    "scheme": "implicit-euler",
+    "linear_solver": "MUMPS",
+    "mpi_ranks": 4
+  }
+}

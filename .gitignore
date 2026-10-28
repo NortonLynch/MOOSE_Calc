@@ -1,0 +1,38 @@
+# Local downloads, caches, licenses, and runtime logs
+downloads/
+logs/
+.jitcache/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.lic
+thermodynamics/cache/
+thermodynamics/private/
+thermodynamics/probe/
+# Binary Thermo-Calc workspaces stay local; exported numeric data are tracked.
+*.POLY3
+
+# Publish only the completed reference calculation and compact verification data.
+results/*
+!results/ni_al_coarsening/
+!results/environment_smoke/
+results/ni_al_coarsening/*
+!results/ni_al_coarsening/RESULTS.md
+!results/ni_al_coarsening/model_parameters.json
+!results/ni_al_coarsening/validation.json
+!results/ni_al_coarsening/exodus_sha256.json
+!results/ni_al_coarsening/restart_tail_cleanup.json
+!results/ni_al_coarsening/coarsening_preview.gif
+!results/ni_al_coarsening/evolution.png
+!results/ni_al_coarsening/diagnostics.png
+!results/ni_al_coarsening/diffusion_evidence.png
+!results/ni_al_coarsening/free_energy_approximation.png
+!results/ni_al_coarsening/particle_diameter_vs_step.png
+!results/ni_al_coarsening/particle_diameter_vs_step.csv
+!results/ni_al_coarsening/diameter_summary.json
+!results/ni_al_coarsening/diagnostics.csv
+!results/ni_al_coarsening/particle_history.csv
+!results/ni_al_coarsening/coarsening.csv
+results/environment_smoke/*
+!results/environment_smoke/verification.json

@@ -1,0 +1,86 @@
+{
+  "software": "Thermo-Calc Educational 2026b",
+  "database": "NIDEMO",
+  "database_version": "2.0",
+  "export_date": "2026-10-19",
+  "method": "Licensed Console Mode, POLY TABULATE; not TC-Python",
+  "temperature_K": 1000,
+  "pressure_Pa": 101325,
+  "bulk_x_Al": 0.14,
+  "composition_basis": "mole fraction of atoms; Ni + Al = 1",
+  "chemical_potential_reference": "SER (vendor default)",
+  "affine_reference_J_mol": {
+    "intercept": -47425.823,
+    "slope_per_x_Al": -135156.45,
+    "definition": "G_reduced = G - (intercept + slope*x_Al); same reference for both phases"
+  },
+  "raw_numeric_precision": "TABULATE: normally six significant digits. Reconstruct G and diffusion potential from separately exported reduced values to preserve small energy differences. This is not extra database accuracy.",
+  "gamma_branch": "Only DIS_FCC_A1 retrieved, disordered homogeneous fcc.",
+  "gamma_prime_branch": "Only FCC_L12#2 entered, all other phases/composition sets suspended; ordinary minimization; site fractions relaxed and order checked.",
+  "scope": "Bulk chemical thermodynamics only; no elastic coherency, curvature, interface energy or diffusion mobility. Single-phase branches may be metastable against other phases.",
+  "target_phases": [
+    {
+      "phase": "gamma",
+      "thermo_calc_phase": "FCC_L12#1 (DISORD)",
+      "x_Al": 0.124644,
+      "Al_at_percent": 12.464400000000001,
+      "mole_fraction": 0.863523,
+      "volume_fraction": 0.861391,
+      "Vm_m3_mol": 6.92577e-06
+    },
+    {
+      "phase": "gamma_prime",
+      "thermo_calc_phase": "FCC_L12#2 (ORD)",
+      "x_Al": 0.237162,
+      "Al_at_percent": 23.7162,
+      "mole_fraction": 0.136477,
+      "volume_fraction": 0.138609,
+      "Vm_m3_mol": 7.05137e-06
+    }
+  ],
+  "validation": {
+    "gamma": {
+      "rows": 502,
+      "x_Al_range": [
+        0.05,
+        0.3
+      ],
+      "max_euler_residual_raw_J_mol": 0.19945040000311565,
+      "max_G_raw_vs_reconstructed_J_mol": 0.05227119999472052
+    },
+    "gamma_prime": {
+      "rows": 242,
+      "x_Al_range": [
+        0.18,
+        0.3
+      ],
+      "max_euler_residual_raw_J_mol": 0.20240979999653064,
+      "max_G_raw_vs_reconstructed_J_mol": 0.053994899993995205
+    },
+    "equilibrium": {
+      "rows": 254,
+      "target_mass_balance_abs_error": 1.1908600000554159e-07,
+      "target_molar_volume_balance_abs_error_m3_mol": 1.5112000006537807e-12,
+      "common_tangent_x_Al_from_interpolation": [
+        0.12464386636371319,
+        0.23716193018684492
+      ],
+      "max_common_tangent_vs_TC_x_Al_error": 1.3363628681428708e-07
+    }
+  },
+  "input_sha256": {
+    "raw/equilibrium_1000K_xAl014.txt": "1e0a0c468fa65d18775211ecee341b7208a2ef74558feec2ba5b8a37abbec30c",
+    "raw/equilibrium_bulk_1000K.txt": "9c23aadcbec78d65ecea9671a5f4e5f24fa07fd8e5f78277c0a510b1e77a6667",
+    "raw/equilibrium_order_1000K.txt": "400f80cedac36f54dfb9f170cd6e57bdd839f1326e4b7515375eb500ac7025f1",
+    "raw/equilibrium_phases_1000K.txt": "2bfdac1585da722ccd63b3751a5642089431e1f3e416265ed0e696c33751de0b",
+    "raw/equilibrium_volumes_1000K.txt": "3a58e303f74c1360791f958aee772b6b55d730b72b850b57198321b9b7436002",
+    "raw/gamma_bulk_1000K.txt": "ce060a14913754ff22c6f1eb8582479a93e51a5ed08378fc86040ee31e953a47",
+    "raw/gamma_prime_bulk_1000K.txt": "c7643410f234deeeca98e227216241616489ba79d5096d84e431e2b37a9bc16c",
+    "raw/gamma_prime_order_1000K.txt": "9df8002b294e5c6d1fc81db8d31afa3993cb29372155c185023e5184aa034217",
+    "raw/gamma_prime_reduced_1000K.txt": "7c6f0d735be8c9404c44ef329ecd73214e06bc20b30239c8934a8595a0d6b49b",
+    "raw/gamma_prime_reference_1000K.txt": "f5b9ac571073bdb12bf1848e4d2c86b1a787a5d17dc1deff34f01b69c2723037",
+    "raw/gamma_reduced_1000K.txt": "b4a03ef8c8f0c6ac7a6f0b6c51c8677a0140b09e469f8c05489ef152d4560427",
+    "raw/gamma_reference_1000K.txt": "1d5e51d7f50a850ea6c8c4bd76a075e8014a002bd70eba58522d1424bde6d03b",
+    "raw/gamma_shifted_1000K.txt": "0d0bfbb7f8351547c7c68ab1909216e93cb400a9bcb8689dca78e50cb16f1894"
+  }
+}

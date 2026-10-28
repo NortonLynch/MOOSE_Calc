@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "exodus_file": "coarsening.e",
+  "readback": "PASS",
+  "saved_frames": 231,
+  "nonlinear_time_steps": 1147,
+  "last_time_star": 60000.0,
+  "superseded_restart_CSV_rows_removed": 92,
+  "maximum_mean_Al_deviation_from_0p14": 1.4682699500667695e-14,
+  "initial_particle_count": 4,
+  "final_particle_count": 3,
+  "initial_equivalent_radii_nm": [
+    9.235505122707492,
+    9.733668895026389,
+    10.33173019538428,
+    10.830245362819928
+  ],
+  "final_equivalent_radii_nm": [
+    2.8325948559746606e-09,
+    9.23214651837074,
+    11.926404529584527,
+    12.846349862516837
+  ],
+  "total_free_energy_initial_dimensionless": 35.917678366979,
+  "total_free_energy_final_dimensionless": 30.244061213331,
+  "largest_positive_energy_step_dimensionless": 0.0,
+  "eta_range": [
+    7.568439742203978e-19,
+    0.9999958714053773
+  ],
+  "x_Al_range": [
+    0.12449770701533601,
+    0.23780737500085364
+  ],
+  "matrix_phase_x_Al_range": [
+    0.12449735934299842,
+    0.1386359481453039
+  ],
+  "precipitate_phase_x_Al_range": [
+    0.23704175185110407,
+    0.2486356656144608
+  ],
+  "radius_measure": "sqrt(integral of h(eta) in the original particle quadrant / pi)",
+  "first_dissolution_time_star": {
+    "p1": 51141.63417186476,
+    "p2": null,
+    "p3": null,
+    "p4": null
+  },
+  "quadrant_Al_transfer_nm2": [
+    -29.05729843100397,
+    -2.27716372485429,
+    13.5171310353129,
+    17.81733112054536
+  ],
+  "scope": "Reference-parameter 2D demonstration, not an experimentally calibrated aging-time prediction",
+  "coarsening_observed": "PASS: small-particle dissolution and large-particle growth"
+}

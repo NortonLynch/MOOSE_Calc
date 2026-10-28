@@ -1,0 +1,23 @@
+@@ Homogeneous disordered fcc gamma; 1000 K, 1 atm, mole fraction Al.
+go poly
+reinitiate_module
+go data
+switch_database NIDEMO
+define_system NI AL
+reject phases *
+restore phases DIS_FCC_A1
+get_data
+go poly
+set_condition T=1000 P=101325 N=1 X(AL)=0.124644
+compute_equilibrium
+list_equilibrium D:/MOOSEcalc/thermodynamics/raw/gamma_reference_1000K.txt AXNSD
+enter_symbol function DGM=MU(AL)-MU(NI);
+enter_symbol function GRES=GM+47425.823+135156.45*X(AL);
+enter_symbol table GAMMA=X(AL),GM,MU(AL),MU(NI),VM;
+enter_symbol table GDERIV=X(AL),DGM,GRES;
+save D:/MOOSEcalc/thermodynamics/raw/gamma_scan_1000K
+set_axis_variable 1 X(AL) 0.05 0.30 0.0005
+step_with_options normal
+tabulate GAMMA D:/MOOSEcalc/thermodynamics/raw/gamma_bulk_1000K.txt
+tabulate GDERIV D:/MOOSEcalc/thermodynamics/raw/gamma_reduced_1000K.txt
+set_interactive

@@ -1,0 +1,14 @@
+@@ Full equilibrium composition scan; no phase suppression.
+read D:/MOOSEcalc/thermodynamics/raw/equilibrium_1000K_xAl014.POLY3
+enter_symbol table EQBULK=X(AL),GM,MU(AL),MU(NI),VM;
+enter_symbol table EQPHASE=X(AL),NPM(FCC_L12#1),X(FCC_L12#1,AL),NPM(FCC_L12#2),X(FCC_L12#2,AL);
+enter_symbol table EQVOLUM=X(AL),VM(FCC_L12#1),VM(FCC_L12#2),VPV(FCC_L12#1),VPV(FCC_L12#2);
+enter_symbol table EQORDER=X(AL),Y(FCC_L12#1,AL#1),Y(FCC_L12#1,AL#2),Y(FCC_L12#2,AL#1),Y(FCC_L12#2,AL#2);
+set_axis_variable 1 X(AL) 0.05 0.30 0.001
+step_with_options normal
+tabulate EQBULK D:/MOOSEcalc/thermodynamics/raw/equilibrium_bulk_1000K.txt
+tabulate EQPHASE D:/MOOSEcalc/thermodynamics/raw/equilibrium_phases_1000K.txt
+tabulate EQVOLUM D:/MOOSEcalc/thermodynamics/raw/equilibrium_volumes_1000K.txt
+tabulate EQORDER D:/MOOSEcalc/thermodynamics/raw/equilibrium_order_1000K.txt
+save D:/MOOSEcalc/thermodynamics/raw/equilibrium_scan_1000K
+set_interactive

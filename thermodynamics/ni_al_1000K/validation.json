@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "gamma": {
+    "rows": 502,
+    "x_Al_range": [
+      0.05,
+      0.3
+    ],
+    "max_euler_residual_raw_J_mol": 0.19945040000311565,
+    "max_G_raw_vs_reconstructed_J_mol": 0.05227119999472052
+  },
+  "gamma_prime": {
+    "rows": 242,
+    "x_Al_range": [
+      0.18,
+      0.3
+    ],
+    "max_euler_residual_raw_J_mol": 0.20240979999653064,
+    "max_G_raw_vs_reconstructed_J_mol": 0.053994899993995205
+  },
+  "equilibrium": {
+    "rows": 254,
+    "target_mass_balance_abs_error": 1.1908600000554159e-07,
+    "target_molar_volume_balance_abs_error_m3_mol": 1.5112000006537807e-12,
+    "common_tangent_x_Al_from_interpolation": [
+      0.12464386636371319,
+      0.23716193018684492
+    ],
+    "max_common_tangent_vs_TC_x_Al_error": 1.3363628681428708e-07
+  }
+}

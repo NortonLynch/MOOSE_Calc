@@ -1,0 +1,7 @@
+name: moose
+channels:
+  - https://conda.software.inl.gov/public
+  - conda-forge
+  - nodefaults
+dependencies:
+  - moose=2026.10.14=mpich

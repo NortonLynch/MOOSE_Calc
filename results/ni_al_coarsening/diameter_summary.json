@@ -1,0 +1,30 @@
+{
+  "diameter_definition": "2*sqrt(integral h(eta) dA in original quadrant / pi)",
+  "accepted_step_definition": "row index in diagnostics.csv; initial state = 0",
+  "saved_frames": 231,
+  "final_accepted_step": 1147,
+  "maximum_time_match_error": 5.00003807246685e-08,
+  "initial_diameters_nm": [
+    18.47101024542,
+    19.46733779006,
+    20.6634603908,
+    21.6604907256
+  ],
+  "final_diameters_nm": [
+    5.66518971194e-09,
+    18.46429303674,
+    23.8528090592,
+    25.692699725
+  ],
+  "first_absent_saved_step": {
+    "p1": 1040,
+    "p2": null,
+    "p3": null,
+    "p4": null
+  },
+  "input_sha256": {
+    "particle_history.csv": "c40bdfdfb6ba6fe15d98dc3542bcf2aadbb56cd8549e245161344dfeb0bc0927",
+    "diagnostics.csv": "bdae1f6ffe4975b17f7ddbd2fdf72277dabad55f19334f79b9cebf96d90880ef"
+  },
+  "note": "Diameters exist at saved frames only, not at every accepted step. Model time is not experimentally calibrated aging time."
+}

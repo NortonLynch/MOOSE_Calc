@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-10-19T03:33:50.122799+00:00",
+  "status": "PASS",
+  "test": "Dimensionless Cahn-Hilliard environment smoke test",
+  "steps": 10,
+  "mesh_elements": 576,
+  "serial_mean_concentration_drift": 0.0,
+  "mpi2_mean_concentration_drift": 0.0,
+  "maximum_serial_mpi_nodal_difference": 1.1102230246251565e-16,
+  "absolute_tolerance": 1e-08,
+  "exodus_readback": "PASS",
+  "kks_mpi2": "PASS",
+  "kks_steps": 3,
+  "kks_mean_concentration_drift": 1.949995720451625e-12,
+  "conservation_note": "Drifts computed from MOOSE CSV output (14 significant digits).",
+  "note": "This does not validate a Ni-Al thermodynamic or kinetic model."
+}
