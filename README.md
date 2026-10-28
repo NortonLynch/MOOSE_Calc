@@ -2,7 +2,11 @@
 
 以 **Ni–14 at.% Al、1000 K** 为例，将 Windows 11 中 Thermo-Calc 导出的两相自由能接入 WSL2 中的 MOOSE，计算二维 γ/γ′体系中小颗粒溶解、大颗粒长大的过程。本仓库保存计算环境、热力学输入、MOOSE 输入文件和关键结果。
 
-**结果范围：参考动力学参数下的二维相场演示。** 自由能采用 Thermo-Calc 数据的局部二次近似；扩散系数和界面能尚未实验标定，因此模型时间 `t*` 不等于已经验证的真实时效时间。
+**结果范围：参考动力学参数下的二维相场演示。** 已完成 Thermo-Calc 自由能的局部二次近似与分段 Hermite 查表对照；扩散系数和界面能尚未实验标定，因此模型时间 `t*` 不等于已经验证的真实时效时间。
+
+**查表法对比结果：** 保持 Ni–14 at.% Al、1000 K、γ/γ′、初始颗粒、网格、界面参数和迁移率不变，仅改变自由能表示。两种方法的平衡成分在原始数据精度内一致；最大颗粒的有效半径增长速率相差约 **−0.175%**（查表相对二次，`t*=5000–30000`）。[结果与分析](results/ni_al_lookup/README.md) · [查表算例与复现说明](examples/ni_al_lookup/README.md) · [完整场数据下载](https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-lookup-v1)
+
+![查表法与二次近似的颗粒半径对比](results/ni_al_lookup/particle_radii_comparison.png)
 
 ## 一、计算环境与部署
 
@@ -140,6 +144,6 @@ Thermo-Calc 宏内保留了原始计算路径 `D:/MOOSEcalc`；在其他位置�
 | 基体扩散势和通量方向 | [diffusion_evidence.png](results/ni_al_coarsening/diffusion_evidence.png) |
 | 完整结果说明和数值校验 | [RESULTS.md](results/ni_al_coarsening/RESULTS.md) / [validation.json](results/ni_al_coarsening/validation.json) |
 
-完整 Exodus 场文件 `coarsening.e`（139,242,316 字节）及检查点保留于原计算机器，**不包含在本 Git 仓库中**；可通过主输入重新生成场文件。仓库包含关键图像、数据表、原始追加式 CSV 及 [Exodus SHA256](results/ni_al_coarsening/exodus_sha256.json)。本次曾从检查点恢复并调整步长控制；干净重算不保证逐步轨迹与已发布结果完全相同。
+完整 Exodus 场文件 `coarsening.e`（139,242,316 字节）已随[查表对照 Release](https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-lookup-v1)发布，未直接存入 Git 历史。下载、校验和恢复目录的方法见[结果说明](results/ni_al_lookup/README.md)。检查点保留于原计算机器；仓库包含关键图像、数据表、原始追加式 CSV 及 [Exodus SHA256](results/ni_al_coarsening/exodus_sha256.json)。本次曾从检查点恢复并调整步长控制；干净重算不保证逐步轨迹与已发布结果完全相同。
 
 该算例没有加入相干弹性、晶向和三维几何，也未完成网格、时间步与界面宽度的系统收敛验证。结果支持参考参数下的熟化现象，不能直接用于预测实验时效小时数或三维熟化速率。

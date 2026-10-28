@@ -1,0 +1,271 @@
+{
+  "result_file_stems": {
+    "quadratic_control": "quadratic_matched",
+    "lookup": "lookup"
+  },
+  "quadratic_control": {
+    "frames": 233,
+    "steps": 1159,
+    "last_time_star": 60000.0,
+    "max_mass_error": 2.7755575615628914e-17,
+    "energy_initial": 35.917678366979,
+    "energy_final": 30.244061070599,
+    "max_energy_increase": 0.0,
+    "radii_initial_nm": [
+      9.235505122707492,
+      9.733668895026389,
+      10.33173019538428,
+      10.830245362819928
+    ],
+    "radii_final_nm": [
+      2.8325928675357365e-09,
+      9.232146072375825,
+      11.926403934645633,
+      12.846350727945513
+    ],
+    "final_count": 3,
+    "eta_range": [
+      7.568564154660794e-19,
+      0.99999587140929
+    ],
+    "phase_composition_ranges": {
+      "c_gamma": [
+        0.12185830232085723,
+        0.134670483703847
+      ],
+      "c_gamma_prime": [
+        0.23487767451926336,
+        0.24538390878011448
+      ]
+    },
+    "dissolution_brackets_star": {
+      "1": [
+        51132.271327176,
+        51142.804527451
+      ],
+      "2": null,
+      "3": null,
+      "4": null
+    },
+    "c_gamma_final_core_mean": 0.12497043707582643,
+    "c_gamma_core_range": [
+      0.12449770701533601,
+      0.12978148613901253
+    ],
+    "c_gamma_prime_final_core_mean": 0.2374142755060803,
+    "c_gamma_prime_core_range": [
+      0.23704154932227514,
+      0.23767128733641862
+    ],
+    "P1_dR_dt_5000_30000": -4.8804368740728756e-05,
+    "P1_dR3_dt_5000_30000": -0.010252138215005736,
+    "P1_dR_dt_10000_40000": -6.962264116975709e-05,
+    "P1_dR3_dt_10000_40000": -0.012811957847433136,
+    "P2_dR_dt_5000_30000": -8.654289837485732e-06,
+    "P2_dR3_dt_5000_30000": -0.0023097802192358374,
+    "P2_dR_dt_10000_40000": -8.075870740436647e-06,
+    "P2_dR3_dt_10000_40000": -0.002131242841938091,
+    "P3_dR_dt_5000_30000": 1.7303484836529523e-05,
+    "P3_dR3_dt_5000_30000": 0.005652866212083594,
+    "P3_dR_dt_10000_40000": 2.2041503664473414e-05,
+    "P3_dR3_dt_10000_40000": 0.007438718410306836,
+    "P4_dR_dt_5000_30000": 2.7676690992577753e-05,
+    "P4_dR3_dt_5000_30000": 0.010242686254363895,
+    "P4_dR_dt_10000_40000": 3.350152788722573e-05,
+    "P4_dR3_dt_10000_40000": 0.012958623122004456,
+    "exodus_sha256": "8d451f9e070e9d298610836fc1022c57272f1a2e35326af893e46f85c778340f"
+  },
+  "lookup": {
+    "frames": 233,
+    "steps": 1157,
+    "last_time_star": 60000.0,
+    "max_mass_error": 2.7755575615628914e-17,
+    "energy_initial": 35.902629820995,
+    "energy_final": 30.243175248126,
+    "max_energy_increase": 0.0,
+    "radii_initial_nm": [
+      9.235505122707492,
+      9.733668895026389,
+      10.33173019538428,
+      10.830245362819928
+    ],
+    "radii_final_nm": [
+      2.8316998103449854e-09,
+      9.236205911202681,
+      11.926841803814723,
+      12.844225981930743
+    ],
+    "final_count": 3,
+    "eta_range": [
+      7.496560058234809e-19,
+      0.9999958614128271
+    ],
+    "phase_composition_ranges": {
+      "c_gamma": [
+        0.12211020320803856,
+        0.13512163783286282
+      ],
+      "c_gamma_prime": [
+        0.23482473452597616,
+        0.24313538062138723
+      ]
+    },
+    "dissolution_brackets_star": {
+      "1": [
+        51105.916653236,
+        51132.271327176
+      ],
+      "2": null,
+      "3": null,
+      "4": null
+    },
+    "c_gamma_final_core_mean": 0.12497012967919024,
+    "c_gamma_core_range": [
+      0.12449770701533601,
+      0.1284064948099242
+    ],
+    "c_gamma_prime_final_core_mean": 0.23741138363118527,
+    "c_gamma_prime_core_range": [
+      0.23704154931148996,
+      0.23765915904750703
+    ],
+    "P1_dR_dt_5000_30000": -4.8829697847773786e-05,
+    "P1_dR3_dt_5000_30000": -0.010257265610957208,
+    "P1_dR_dt_10000_40000": -6.967778294505753e-05,
+    "P1_dR3_dt_10000_40000": -0.012820640302977316,
+    "P2_dR_dt_5000_30000": -8.602707235083675e-06,
+    "P2_dR3_dt_5000_30000": -0.0022966811588019014,
+    "P2_dR_dt_10000_40000": -8.020705867175743e-06,
+    "P2_dR3_dt_10000_40000": -0.0021174841369740465,
+    "P3_dR_dt_5000_30000": 1.732975719671787e-05,
+    "P3_dR3_dt_5000_30000": 0.005662141316729624,
+    "P3_dR_dt_10000_40000": 2.206933158549065e-05,
+    "P3_dR3_dt_10000_40000": 0.007449130183836538,
+    "P4_dR_dt_5000_30000": 2.7628320247245952e-05,
+    "P4_dR3_dt_5000_30000": 0.010224732629511218,
+    "P4_dR_dt_10000_40000": 3.346443741242707e-05,
+    "P4_dR3_dt_10000_40000": 0.01294377724851497,
+    "exodus_sha256": "28e153580c05a3f8d6634dc91561cc129c2455bac6110c6e2b1a8a9a94f8e2e1"
+  },
+  "baseline_control": {
+    "c_max_abs_error": 1.0397044336585282e-11,
+    "eta_max_abs_error": 3.2762492718774183e-10,
+    "mu_max_abs_error": 1.0112497506042928e-09
+  },
+  "identical_initial_c_eta": true,
+  "same_saved_time_grid": false,
+  "time_sequence_exact": false,
+  "identical_time_steps_through_40000": true,
+  "validation_status": "PASS",
+  "thermodynamics": {
+    "method": "piecewise cubic Hermite interpolation of reduced G and dG/dc, differentiated consistently",
+    "tables": {
+      "gamma": {
+        "sha256": "2ea6a95bbbf505a45e67689c8808025fb945bff0fb79c6e6611261081dfb9fe0",
+        "rows": 502,
+        "range": [
+          0.05,
+          0.3
+        ],
+        "maximum_G_node_error_J_mol": 4.547473508864641e-13,
+        "maximum_mu_node_error_J_mol": 7.275957614183426e-12
+      },
+      "gamma_prime": {
+        "sha256": "df884189e773ed2209378eec8cf1a728f72b3efb38f08472258afa659517ec97",
+        "rows": 242,
+        "range": [
+          0.18,
+          0.3
+        ],
+        "maximum_G_node_error_J_mol": 1.1368683772161603e-13,
+        "maximum_mu_node_error_J_mol": 7.275957614183426e-12
+      }
+    },
+    "common_tangent_x_Al": [
+      0.12464386636371318,
+      0.2371619301868449
+    ],
+    "common_tangent_residual": [
+      2.9971684856189285e-15,
+      -1.6344135991982166e-16
+    ],
+    "curvatures_at_tangent_J_mol": [
+      347971.5657655556,
+      423243.02380855405
+    ],
+    "quadratic_equilibrium_x_Al": [
+      0.124644,
+      0.237162
+    ],
+    "quadratic_curvatures_J_mol": [
+      347973.0,
+      424347.4
+    ],
+    "controls": "Same nodal eta,c IC, geometry, mesh, W,kappa,M,L, scales and final time. Replay baseline accepted time sequence."
+  },
+  "matched_time_control": {
+    "restart_method": "SolutionIC fresh implicit-Euler restart; no recovered timestepper",
+    "checkpoint_time_star": 50489.02206324,
+    "source_frame_index_zero_based": 200,
+    "lookup_steps": 1157,
+    "original_steps": 1147,
+    "extra_lookup_times": [
+      51100.368300827,
+      51123.948798563,
+      51135.392275405,
+      51140.07369775,
+      51142.804527451,
+      51143.243410796,
+      51143.435422259,
+      51143.615433006,
+      51143.784193081,
+      51143.942405652
+    ],
+    "first_additional_time": 51100.368300827
+  },
+  "quadratic_time_refinement_final_max_field_change": {
+    "c": 6.250020270770484e-08,
+    "eta": 2.7969173782560475e-07,
+    "mu": 1.4648198459754624e-08
+  },
+  "quadratic_time_refinement_final_radius_change_nm": [
+    -1.988439009240688e-15,
+    -4.4599490500729644e-07,
+    -5.949389105808223e-07,
+    8.654286602904904e-07
+  ],
+  "assembled_control": {
+    "restart_method": "SolutionIC fresh implicit-Euler restart; no recovered timestepper",
+    "checkpoint_time_star": 50489.02206324,
+    "source_frame_index_zero_based": 200,
+    "lookup_steps": 1157,
+    "original_steps": 1147,
+    "extra_lookup_times": [
+      51100.368300827,
+      51123.948798563,
+      51135.392275405,
+      51140.07369775,
+      51142.804527451,
+      51143.243410796,
+      51143.435422259,
+      51143.615433006,
+      51143.784193081,
+      51143.942405652
+    ],
+    "first_additional_time": 51100.368300827,
+    "initial_field_max_abs_errors": {
+      "eta": 0.0,
+      "c": 0.0,
+      "mu": 0.0
+    },
+    "saved_frames": 233,
+    "time_steps": 1159,
+    "additional_control_times": [
+      51157.897428518,
+      51158.105726668
+    ],
+    "exact_time_grid_match": false,
+    "assembly": "Exact concatenation of original solver output fields; no resampling"
+  },
+  "original_exodus_unchanged_sha256": "cd3f5dea9300833e5dbcaadc507d2375af37ddf0391a53377a1489caf20266c0"
+}

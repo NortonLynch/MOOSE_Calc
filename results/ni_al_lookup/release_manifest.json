@@ -1,0 +1,202 @@
+{
+  "release_tag": "ni-al-lookup-v1",
+  "release_url": "https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-lookup-v1",
+  "archive": {
+    "name": "ni_al_lookup_results.zip",
+    "url": "https://github.com/NortonLynch/MOOSE_Calc/releases/download/ni-al-lookup-v1/ni_al_lookup_results.zip",
+    "size_bytes": 309968369,
+    "sha256": "f98d2e238aef5a604b16d751f370f18a1e8b317a667752b42d9cf61699cde230"
+  },
+  "files": [
+    {
+      "path": "results/ni_al_coarsening/coarsening.e",
+      "size_bytes": 139242316,
+      "sha256": "cd3f5dea9300833e5dbcaadc507d2375af37ddf0391a53377a1489caf20266c0"
+    },
+    {
+      "path": "results/ni_al_lookup/README.md",
+      "size_bytes": 5044,
+      "sha256": "ab59606c930b9c5775b7fade167f3254ba545aab67096d3a47708482515f96a9"
+    },
+    {
+      "path": "results/ni_al_lookup/REPORT.html",
+      "size_bytes": 1254805,
+      "sha256": "1253c2fad3b6e92f647a6b0765f0e17d8e72a7920511743885eff9e3e52af905"
+    },
+    {
+      "path": "results/ni_al_lookup/assembled_control.json",
+      "size_bytes": 834,
+      "sha256": "2d0ff344979c30402495ccd8038d84976801ab0724ddfb19583342fef6045629"
+    },
+    {
+      "path": "results/ni_al_lookup/comparison.gif",
+      "size_bytes": 2843398,
+      "sha256": "5169c58f107132e458f5edd408605fd2e8acbbc010b6a7a28b28e83f0e7c2760"
+    },
+    {
+      "path": "results/ni_al_lookup/comparison_metrics.json",
+      "size_bytes": 8129,
+      "sha256": "2a89e688ad2a80b65d914b378f98a84a3711812e2ecbfb4352f397a211c2c644"
+    },
+    {
+      "path": "results/ni_al_lookup/comparison_summary.csv",
+      "size_bytes": 2161,
+      "sha256": "15c845598dfc6d0c0a3168f00bf6e0f93cfde74a0b7dfb2c494a4b29872dc9b8"
+    },
+    {
+      "path": "results/ni_al_lookup/control_smoke.csv",
+      "size_bytes": 1048,
+      "sha256": "61b4322d0f8ca90eeb5b3d7387b8e989ce512e0f1cc03e5f06b8c5d5fd9444bb"
+    },
+    {
+      "path": "results/ni_al_lookup/control_smoke.e",
+      "size_bytes": 3499428,
+      "sha256": "9cc5a73eb0056950bf68d441dbd58a7df96c123665fc4dbcac6f06a1e10664d4"
+    },
+    {
+      "path": "results/ni_al_lookup/core_compositions_comparison.pdf",
+      "size_bytes": 18900,
+      "sha256": "e5f4b72ef36bc1c61617ec328cd77d511e3842fdb8b8fd0ac1436478ca0ee1b2"
+    },
+    {
+      "path": "results/ni_al_lookup/core_compositions_comparison.png",
+      "size_bytes": 93077,
+      "sha256": "b81eb9d151d0985dbb652cbf8dedc07fa5d7000d4b36ea51dd233d96749a6891"
+    },
+    {
+      "path": "results/ni_al_lookup/equilibrium_comparison.pdf",
+      "size_bytes": 17838,
+      "sha256": "98a988f5e0393251f1debda20cbed6c0377e4db6dd99554a8301e1b4dd96b635"
+    },
+    {
+      "path": "results/ni_al_lookup/equilibrium_comparison.png",
+      "size_bytes": 58594,
+      "sha256": "d7ee0296d59d49c7547ad38c0aaa3258291447f060a252e43b420eb60fbb5227"
+    },
+    {
+      "path": "results/ni_al_lookup/free_energy_comparison.pdf",
+      "size_bytes": 24185,
+      "sha256": "170ebf23027661f96807de1013221c0250d0fa362a14ea11f760539f6bd78b67"
+    },
+    {
+      "path": "results/ni_al_lookup/free_energy_comparison.png",
+      "size_bytes": 218204,
+      "sha256": "6726b44faf022a9f99dee5c3c2dffe000442d09cc1a7048b9a788db8b20868c3"
+    },
+    {
+      "path": "results/ni_al_lookup/growth_rates_comparison.pdf",
+      "size_bytes": 15803,
+      "sha256": "fb6d2842342a00e9b8823c1af395f54cd76e7466f2787b5506d5154ce4cfcffc"
+    },
+    {
+      "path": "results/ni_al_lookup/growth_rates_comparison.png",
+      "size_bytes": 42867,
+      "sha256": "5fd6d6a52bc74285c8f9def88214a7d2ab9f417a0607438ce586cf8ff8e64a2c"
+    },
+    {
+      "path": "results/ni_al_lookup/kinetics_comparison.pdf",
+      "size_bytes": 23563,
+      "sha256": "04e6dd892e17953ba418a0f6b34bfe414d865344bcacf3a0360d2b11e9469a21"
+    },
+    {
+      "path": "results/ni_al_lookup/kinetics_comparison.png",
+      "size_bytes": 158570,
+      "sha256": "4be084cc758ecebbdb7f8df6a9d48e241972e07487619685f6eb44d485703ca0"
+    },
+    {
+      "path": "results/ni_al_lookup/lookup.csv",
+      "size_bytes": 62005,
+      "sha256": "ee5e2d230b88cf7cba94080fc1a5fbebfb234fd75844bb7bb51c23761fe91454"
+    },
+    {
+      "path": "results/ni_al_lookup/lookup.e",
+      "size_bytes": 139890036,
+      "sha256": "28e153580c05a3f8d6634dc91561cc129c2455bac6110c6e2b1a8a9a94f8e2e1"
+    },
+    {
+      "path": "results/ni_al_lookup/lookup_core_compositions.csv",
+      "size_bytes": 12884,
+      "sha256": "181391fa64a7524a7d6970c483f60d9a8be5c2c4a5ab77b8c2785d47d950d52e"
+    },
+    {
+      "path": "results/ni_al_lookup/lookup_particle_history.csv",
+      "size_bytes": 29582,
+      "sha256": "55177567b8cbbb829393faa457890df96b2784c8bc18c0e942b62bec8a39828e"
+    },
+    {
+      "path": "results/ni_al_lookup/matched_time_control.json",
+      "size_bytes": 507,
+      "sha256": "e0ac61d3cda28426305f907450537c081203b68f1aa0a2f77d32259f14f3cbdc"
+    },
+    {
+      "path": "results/ni_al_lookup/microstructure_comparison.pdf",
+      "size_bytes": 177157,
+      "sha256": "1529d956c1195e440f484cd7c4ac9af3057fe1a55080f8c33d3f413892002663"
+    },
+    {
+      "path": "results/ni_al_lookup/microstructure_comparison.png",
+      "size_bytes": 180680,
+      "sha256": "2c9e7487c5cff97e376ce70f675ddb3ad444b89abcc651a8902639cab1d184d4"
+    },
+    {
+      "path": "results/ni_al_lookup/numerical_control.json",
+      "size_bytes": 226,
+      "sha256": "72541b34a9d0b77be53c1c5244d7c86c7cfafc915d7639ee884b2b3a5aff8442"
+    },
+    {
+      "path": "results/ni_al_lookup/particle_radii_comparison.pdf",
+      "size_bytes": 20955,
+      "sha256": "12e37fd1dd09c9f514d346bd7a99fc52303c43187ad02160080bd51a36e0563a"
+    },
+    {
+      "path": "results/ni_al_lookup/particle_radii_comparison.png",
+      "size_bytes": 180750,
+      "sha256": "76febb23ff305ccdd824281b7680c2fdd9385be52aeb096f2c738e96b37a4fad"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_analytic_tail.csv",
+      "size_bytes": 8641,
+      "sha256": "d2afb9007f3aca8b8fc7588ce46828a8308c211c667a697f9ad45994124e32c9"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_analytic_tail.e",
+      "size_bytes": 20217148,
+      "sha256": "58176fc55727ae310c2c0caf5d206e07f73b1b08769723224460a7404b57c4e8"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_control.csv",
+      "size_bytes": 61483,
+      "sha256": "dabb9df4eadb64b36570f6ca41e835da9fdcef35c492e4d2c87d1260f1c91e1f"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_control.e",
+      "size_bytes": 138554848,
+      "sha256": "36018a99b8cfa7258562a7bba0a01cc8e90d88e807856e8c94760c75b0b4c0e9"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_control_core_compositions.csv",
+      "size_bytes": 12872,
+      "sha256": "7f0a09764dc86295a37e2c1de8347a7a5698a5bd5cc7a8a2b3a9fc3572db5742"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_control_particle_history.csv",
+      "size_bytes": 29380,
+      "sha256": "c984d68271d09cd05f34d4b14808a6f3584bee162f927c163f3cc60f4a8f463d"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_matched.csv",
+      "size_bytes": 87832,
+      "sha256": "90c44e74a4eeb5350b0d1b86f13170d822b37e2fe3f3257333ee83a0287571c4"
+    },
+    {
+      "path": "results/ni_al_lookup/quadratic_matched.e",
+      "size_bytes": 139750188,
+      "sha256": "8d451f9e070e9d298610836fc1022c57272f1a2e35326af893e46f85c778340f"
+    },
+    {
+      "path": "results/ni_al_lookup/thermodynamic_validation.json",
+      "size_bytes": 1243,
+      "sha256": "b4f66c914101193b4538db260405092fd3e966fa6c438a14b2df3f8a899be90b"
+    }
+  ]
+}

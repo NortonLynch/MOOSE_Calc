@@ -1,0 +1,8 @@
+{
+  "c_max_abs_difference": 4.996003610813204e-16,
+  "eta_max_abs_difference": 1.7763568394002505e-15,
+  "mu_max_abs_difference": 8.197609258076e-14,
+  "frames_compared": 5,
+  "last_time_star": 122.81875,
+  "status": "PASS"
+}

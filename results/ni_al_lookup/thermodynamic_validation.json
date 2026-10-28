@@ -1,0 +1,46 @@
+{
+  "method": "piecewise cubic Hermite interpolation of reduced G and dG/dc, differentiated consistently",
+  "tables": {
+    "gamma": {
+      "sha256": "2ea6a95bbbf505a45e67689c8808025fb945bff0fb79c6e6611261081dfb9fe0",
+      "rows": 502,
+      "range": [
+        0.05,
+        0.3
+      ],
+      "maximum_G_node_error_J_mol": 4.547473508864641e-13,
+      "maximum_mu_node_error_J_mol": 7.275957614183426e-12
+    },
+    "gamma_prime": {
+      "sha256": "df884189e773ed2209378eec8cf1a728f72b3efb38f08472258afa659517ec97",
+      "rows": 242,
+      "range": [
+        0.18,
+        0.3
+      ],
+      "maximum_G_node_error_J_mol": 1.1368683772161603e-13,
+      "maximum_mu_node_error_J_mol": 7.275957614183426e-12
+    }
+  },
+  "common_tangent_x_Al": [
+    0.12464386636371318,
+    0.2371619301868449
+  ],
+  "common_tangent_residual": [
+    2.9971684856189285e-15,
+    -1.6344135991982166e-16
+  ],
+  "curvatures_at_tangent_J_mol": [
+    347971.5657655556,
+    423243.02380855405
+  ],
+  "quadratic_equilibrium_x_Al": [
+    0.124644,
+    0.237162
+  ],
+  "quadratic_curvatures_J_mol": [
+    347973.0,
+    424347.4
+  ],
+  "controls": "Same nodal eta,c IC, geometry, mesh, W,kappa,M,L, scales and final time. Replay baseline accepted time sequence."
+}

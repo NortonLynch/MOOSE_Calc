@@ -1,0 +1,33 @@
+{
+  "restart_method": "SolutionIC fresh implicit-Euler restart; no recovered timestepper",
+  "checkpoint_time_star": 50489.02206324,
+  "source_frame_index_zero_based": 200,
+  "lookup_steps": 1157,
+  "original_steps": 1147,
+  "extra_lookup_times": [
+    51100.368300827,
+    51123.948798563,
+    51135.392275405,
+    51140.07369775,
+    51142.804527451,
+    51143.243410796,
+    51143.435422259,
+    51143.615433006,
+    51143.784193081,
+    51143.942405652
+  ],
+  "first_additional_time": 51100.368300827,
+  "initial_field_max_abs_errors": {
+    "eta": 0.0,
+    "c": 0.0,
+    "mu": 0.0
+  },
+  "saved_frames": 233,
+  "time_steps": 1159,
+  "additional_control_times": [
+    51157.897428518,
+    51158.105726668
+  ],
+  "exact_time_grid_match": false,
+  "assembly": "Exact concatenation of original solver output fields; no resampling"
+}

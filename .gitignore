@@ -7,6 +7,7 @@ __pycache__/
 .env
 .env.*
 *.lic
+tmp_jit_*
 thermodynamics/cache/
 thermodynamics/private/
 thermodynamics/probe/
@@ -36,3 +37,25 @@ results/ni_al_coarsening/*
 !results/ni_al_coarsening/coarsening.csv
 results/environment_smoke/*
 !results/environment_smoke/verification.json
+
+# Completed lookup/quadratic comparison; large fields are GitHub Release assets.
+!results/ni_al_lookup/
+results/ni_al_lookup/*
+!results/ni_al_lookup/README.md
+!results/ni_al_lookup/REPORT.html
+!results/ni_al_lookup/comparison.gif
+!results/ni_al_lookup/*_comparison.png
+!results/ni_al_lookup/*_comparison.pdf
+!results/ni_al_lookup/comparison_metrics.json
+!results/ni_al_lookup/comparison_summary.csv
+!results/ni_al_lookup/*_particle_history.csv
+!results/ni_al_lookup/*_core_compositions.csv
+!results/ni_al_lookup/lookup.csv
+!results/ni_al_lookup/quadratic_control.csv
+!results/ni_al_lookup/quadratic_matched.csv
+!results/ni_al_lookup/quadratic_analytic_tail.csv
+!results/ni_al_lookup/thermodynamic_validation.json
+!results/ni_al_lookup/numerical_control.json
+!results/ni_al_lookup/matched_time_control.json
+!results/ni_al_lookup/assembled_control.json
+!results/ni_al_lookup/release_manifest.json
