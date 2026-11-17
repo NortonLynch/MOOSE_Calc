@@ -1,0 +1,24 @@
+{
+  "no_elastic_seconds.e": {
+    "bytes": 139890424,
+    "sha256": "056af512d4a18dcea179b066ef61f8ac11725c38f20c5c52f5fbff7f60ee341a",
+    "source": "results/ni_al_lookup/lookup.e",
+    "time_unit": "s",
+    "coordinate_unit": "nm",
+    "stress_unit": "MPa",
+    "energy_density_unit": "J/m^3",
+    "integrated_energy_unit": "J/m of out-of-plane thickness",
+    "chemical_diffusion_potential_mu_unit": "1000 J/mol (unchanged)"
+  },
+  "elastic_seconds.e": {
+    "bytes": 276964404,
+    "sha256": "b5d866057544826bb023966788975bd8dc262a49b943237aab34957075145de7",
+    "source": "results/ni_al_elastic/elastic.e",
+    "time_unit": "s",
+    "coordinate_unit": "nm",
+    "stress_unit": "MPa",
+    "energy_density_unit": "J/m^3",
+    "integrated_energy_unit": "J/m of out-of-plane thickness",
+    "chemical_diffusion_potential_mu_unit": "1000 J/mol (unchanged)"
+  }
+}

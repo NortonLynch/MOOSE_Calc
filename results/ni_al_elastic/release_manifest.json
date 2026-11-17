@@ -1,0 +1,42 @@
+{
+  "release_tag": "ni-al-elastic-v1",
+  "release_url": "https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-elastic-v1",
+  "archive": {
+    "name": "ni_al_elastic_results.zip",
+    "url": "https://github.com/NortonLynch/MOOSE_Calc/releases/download/ni-al-elastic-v1/ni_al_elastic_results.zip",
+    "size_bytes": 512830301,
+    "sha256": "e871158352c88db558216732c34ce013e7037d4289e5940625a6827d8644c859"
+  },
+  "files": [
+    {
+      "path": "results/ni_al_elastic/elastic.e",
+      "size_bytes": 276963496,
+      "sha256": "68c4826aad05b662c26dd1cf5748c69837d1cb6f9e209cce8dd24ab2c80a16bc"
+    },
+    {
+      "path": "results/ni_al_elastic/elastic_initial.e",
+      "size_bytes": 4279968,
+      "sha256": "8dc37645554529b9f75db5cdb2e725e47e11082d3efddabfc0806bb26cddb3c4"
+    },
+    {
+      "path": "results/ni_al_elastic/zero_misfit.e",
+      "size_bytes": 6691976,
+      "sha256": "88909427bbe6612f9ccbdf5859d654b963cfe7ea48786b47abec2bab6e91492b"
+    },
+    {
+      "path": "results/ni_al_elastic/elastic_seconds.e",
+      "size_bytes": 276964404,
+      "sha256": "b5d866057544826bb023966788975bd8dc262a49b943237aab34957075145de7"
+    },
+    {
+      "path": "results/ni_al_elastic/no_elastic_seconds.e",
+      "size_bytes": 139890424,
+      "sha256": "056af512d4a18dcea179b066ef61f8ac11725c38f20c5c52f5fbff7f60ee341a"
+    },
+    {
+      "path": "results/ni_al_lookup/lookup.e",
+      "size_bytes": 139890036,
+      "sha256": "28e153580c05a3f8d6634dc91561cc129c2455bac6110c6e2b1a8a9a94f8e2e1"
+    }
+  ]
+}

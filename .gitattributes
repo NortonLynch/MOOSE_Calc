@@ -5,6 +5,8 @@
 scripts/moose_bashrc text eol=lf
 *.md text eol=lf
 *.html text eol=lf
+# Matplotlib SVG path data contain intentional trailing spaces.
+*.svg text eol=lf -whitespace
 *.json text eol=lf
 *.csv text eol=lf
 *.txt text eol=lf

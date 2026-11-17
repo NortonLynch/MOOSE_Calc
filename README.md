@@ -2,9 +2,19 @@
 
 以 **Ni–14 at.% Al、1000 K** 为例，将 Windows 11 中 Thermo-Calc 导出的两相自由能接入 WSL2 中的 MOOSE，计算二维 γ/γ′体系中小颗粒溶解、大颗粒长大的过程。本仓库保存计算环境、热力学输入、MOOSE 输入文件和关键结果。
 
-**结果范围：参考动力学参数下的二维相场演示。** 已完成 Thermo-Calc 自由能的局部二次近似与分段 Hermite 查表对照；扩散系数和界面能尚未实验标定，因此模型时间 `t*` 不等于已经验证的真实时效时间。
+**结果范围：二维相场熟化及共格弹性对照。** 已完成 Thermo-Calc 自由能的局部二次近似与分段 Hermite 查表对照，并加入弹性场。弹性对照采用文献迁移率换算物理时间；界面能仍使用参考参数，时间与速率尚未实验标定。
 
 **查表法对比结果：** 保持 Ni–14 at.% Al、1000 K、γ/γ′、初始颗粒、网格、界面参数和迁移率不变，仅改变自由能表示。两种方法的平衡成分在原始数据精度内一致；最大颗粒的有效半径增长速率相差约 **−0.175%**（查表相对二次，`t*=5000–30000`）。[结果与分析](results/ni_al_lookup/README.md) · [查表算例与复现说明](examples/ni_al_lookup/README.md) · [完整场数据下载](https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-lookup-v1)
+
+**弹性扩展：** 在同一查表算例中加入 γ/γ′立方弹性与 0.0047 共格失配，比较无弹性与有弹性的形貌、颗粒半径及数平均半径立方。基于文献 fcc 迁移率和当前热力学因子的时间换算为 `1 t* = 0.16598177 s`，`t*=60000` 对应约 **2.76636 h**；这仍是文献模型时间，尚未实验标定。四颗粒二维体系存在颗粒消失造成的平均值跳变，拟合斜率不能直接作为三维 LSW 材料常数。[弹性算例与一键复现](examples/ni_al_elastic/README.md) · [本地完整报告](results/ni_al_elastic/REPORT.html) · [物理时间 ParaView 场文件说明](results/ni_al_elastic/README.md)
+
+**固定单颗粒分析：** 从两组原始场重新提取终态最大颗粒 P4，输出其面积的 `3/2` 次方与面积等效半径立方随物理时间的曲线。局部窗口可近似线性，但分段斜率变化，不能用一个常数概括全过程。[单颗粒报告](results/ni_al_elastic/single_particle/REPORT.html) · [r³ 曲线](results/ni_al_elastic/single_particle/P4_radius_cubed_vs_time.png) · [全部拟合结果](results/ni_al_elastic/single_particle/P4_growth_fits.csv)
+
+**实验熟化率资料：** 已核查原作者实验汇总和后续再拟合，邻近温度 988 K、1023 K 的平均半边长立方斜率分别为 `0.0701`、`0.160 nm³/s`。没有核实到精确 Ni–14 at.% Al、1000 K 的实测点；这些群体统计不能直接标定 P4 单颗粒。[数据与来源](results/ni_al_elastic/experimental_benchmarks/REPORT.html) · [CSV](results/ni_al_elastic/experimental_benchmarks/experimental_rates.csv)
+
+**弹性结果下载：** [ni-al-elastic-v1 Release](https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-elastic-v1) 提供原始场、初始力学平衡、零失配校验和秒单位 ParaView 文件。克隆后运行 `python scripts/download_elastic_results.py` 自动校验并恢复目录；[查看及复现步骤](results/ni_al_elastic/README.md)。报告 HTML 请下载后用浏览器打开。
+
+![固定 P4 的半径立方与物理时间](results/ni_al_elastic/single_particle/P4_radius_cubed_vs_time.png)
 
 ![查表法与二次近似的颗粒半径对比](results/ni_al_lookup/particle_radii_comparison.png)
 
@@ -146,4 +156,4 @@ Thermo-Calc 宏内保留了原始计算路径 `D:/MOOSEcalc`；在其他位置�
 
 完整 Exodus 场文件 `coarsening.e`（139,242,316 字节）已随[查表对照 Release](https://github.com/NortonLynch/MOOSE_Calc/releases/tag/ni-al-lookup-v1)发布，未直接存入 Git 历史。下载、校验和恢复目录的方法见[结果说明](results/ni_al_lookup/README.md)。检查点保留于原计算机器；仓库包含关键图像、数据表、原始追加式 CSV 及 [Exodus SHA256](results/ni_al_coarsening/exodus_sha256.json)。本次曾从检查点恢复并调整步长控制；干净重算不保证逐步轨迹与已发布结果完全相同。
 
-该算例没有加入相干弹性、晶向和三维几何，也未完成网格、时间步与界面宽度的系统收敛验证。结果支持参考参数下的熟化现象，不能直接用于预测实验时效小时数或三维熟化速率。
+本节原始二次近似算例没有加入相干弹性、晶向和三维几何；新增弹性对照见文首链接。两组均未完成网格、时间步与界面宽度的系统收敛验证，不能直接用于预测实验时效小时数或三维材料熟化常数。

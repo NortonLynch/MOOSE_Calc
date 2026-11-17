@@ -1,0 +1,54 @@
+[Materials]
+  # 1. 定义 γ 基体相的弹性张量 (1000 K, 单位: GPa，若用 eV/nm^3 请替换为 1.242 0.893 0.618)
+  [./elasticity_tensor_gamma]
+    type = ComputeElasticityTensor
+    base_name = gamma
+    fill_method = symmetric9
+    # 顺序: C11   C12   C12   C11   C12   C11   C44   C44   C44
+    C_ijkl = '199.0 143.0 143.0 199.0 143.0 199.0 99.0  99.0  99.0'
+  [../]
+
+  # 2. 定义 γ' 析出相 (Ni3Al) 的弹性张量 (1000 K, 单位: GPa，若用 eV/nm^3 请替换为 1.297 0.929 0.639)
+  [./elasticity_tensor_gammaprime]
+    type = ComputeElasticityTensor
+    base_name = gammaprime
+    fill_method = symmetric9
+    # 顺序: C11   C12   C12   C11   C12   C11   C44    C44    C44
+    C_ijkl = '207.8 148.8 148.8 207.8 148.8 207.8 102.3  102.3  102.3'
+  [../]
+
+  # 3. 通过插值函数 h(eta) 耦合两相弹性张量: C(eta) = (1 - h)*C_gamma + h*C_gammaprime
+  [./elasticity_tensor]
+    type = CompositeElasticityTensor
+    args = 'eta'
+    tensors = 'gamma   gammaprime'
+    weights = 'one_minus_h  h'
+  [../]
+
+  # 4. 定义 γ' 相的晶格失配本征应变 (Eigenstrain, 1000 K 下约为 0.0047)
+  [./eigenstrain]
+    type = ComputeVariableEigenstrain
+    eigen_base = '0.0047 0.0047 0.0047 0 0 0'
+    prefactor = h
+    args = 'eta'
+    eigenstrain_name = eigenstrain
+  [../]
+
+  # 5. 计算线弹性应力与应变
+  [./strain]
+    type = ComputeSmallStrain
+    displacements = 'disp_x disp_y' # 若为3D则加上 disp_z
+    eigenstrain_names = 'eigenstrain'
+  [../]
+  [./stress]
+    type = ComputeLinearElasticStress
+  [../]
+
+  # 6. 计算弹性自由能密度，用于传递给相场 Allen-Cahn / Cahn-Hilliard 方程驱动熟化
+  [./elastic_free_energy]
+    type = ElasticEnergyMaterial
+    f_name = f_el
+    args = 'eta'
+    derivative_order = 2
+  [../]
+[]

@@ -1,0 +1,18 @@
+{
+  "zero_misfit_matching_saved_frames": 5,
+  "zero_misfit_max_nodal_difference": {
+    "c": 6.106226635438361e-16,
+    "eta": 1.2212453270876722e-15,
+    "mu": 6.351169590246286e-14
+  },
+  "steady_to_transient_initial_nodal_difference": {
+    "c": 0.0,
+    "eta": 0.0,
+    "mu": 0.0,
+    "disp_x": 0.0,
+    "disp_y": 0.0
+  },
+  "status": "PASS",
+  "initial_auxiliary_output_note": "ComputeEigenstrainBase deliberately skips eigenstrain at step zero. Raw transient INITIAL stress/elastic-energy outputs therefore do not represent the imported relaxed state. Corrected analysis and seconds Exodus take ONLY those t=0 auxiliary/global mechanical quantities from elastic_initial.e final steady solution. Nodal c/eta/mu/disp fields are unchanged; their equality is checked above.",
+  "source": "https://github.com/idaholab/moose/blob/master/modules/solid_mechanics/src/materials/ComputeEigenstrainBase.C"
+}

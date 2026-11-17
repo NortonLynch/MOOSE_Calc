@@ -1,5 +1,6 @@
 # Local downloads, caches, licenses, and runtime logs
 downloads/
+tmp/
 logs/
 .jitcache/
 __pycache__/
@@ -59,3 +60,24 @@ results/ni_al_lookup/*
 !results/ni_al_lookup/matched_time_control.json
 !results/ni_al_lookup/assembled_control.json
 !results/ni_al_lookup/release_manifest.json
+
+# Elastic comparison, single-particle kinetics, and experimental benchmarks.
+# Large Exodus fields are Release assets; literature PDFs stay local.
+!results/ni_al_elastic/
+results/ni_al_elastic/*
+!results/ni_al_elastic/README.md
+!results/ni_al_elastic/REPORT.html
+!results/ni_al_elastic/*.png
+!results/ni_al_elastic/elastic_comparison.gif
+!results/ni_al_elastic/*.json
+!results/ni_al_elastic/*_particle_history.csv
+!results/ni_al_elastic/*_core_compositions.csv
+!results/ni_al_elastic/*_diagnostics_physical.csv
+!results/ni_al_elastic/coarsening_rate_fits.csv
+!results/ni_al_elastic/diffusion_calibration_curve.csv
+!results/ni_al_elastic/elastic.csv
+!results/ni_al_elastic/elastic_initial.csv
+!results/ni_al_elastic/zero_misfit.csv
+!results/ni_al_elastic/single_particle/
+!results/ni_al_elastic/experimental_benchmarks/
+results/ni_al_elastic/experimental_benchmarks/sources/

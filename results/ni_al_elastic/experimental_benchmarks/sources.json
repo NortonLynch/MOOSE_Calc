@@ -1,0 +1,102 @@
+{
+  "search_date": "2026-11-05",
+  "target": {
+    "Al_at_percent": 14,
+    "temperature_K": 1000,
+    "phases": "gamma matrix / gamma-prime precipitates"
+  },
+  "exact_match_status": "not located in the verified sources; not a claim that none exists",
+  "source_file_policy": "Third-party PDFs remain optional local references and are not distributed in Git. Public links and historical file identities are retained. Missing local files are explicitly not checked; mismatching local files stop generation.",
+  "sources": {
+    "Ardell1969": {
+      "title": "Experimental Confirmation of the Lifshitz-Wagner Theory of Particle Coarsening",
+      "author": "A. J. Ardell",
+      "year": 1969,
+      "publication": "The Mechanism of Phase Transformations in Crystalline Solids, Institute of Metals, Monograph and Report Series 33, pp.111-116",
+      "source_kind": "Original experimenter reporting a summary of his experimental measurements",
+      "url": "https://www.phase-trans.msm.cam.ac.uk/2008/MPT/Part_3.pdf",
+      "local_pdf": "sources/Ardell_1969_MPT_Part3.pdf",
+      "sha256": "b95e147d8ea2ec24709bf71430b55ecd78d616a14b1c7657764790ac62706871",
+      "bytes": 35045906,
+      "location": "Printed p112 Table I and preceding paragraph; PDF page22 (1-based). Composition assignment also checked in printed p113 Fig1/2, PDF page23.",
+      "quantity": "d[(mean cube edge length / 2)^3]/dt",
+      "measurement_method": "Transmission electron microscopy particle sizes",
+      "fit_time_window": "Table I does not give exact start/end times of each regression. Fig2 PSD aging times are not asserted to be the regression window.",
+      "visual_verification": true,
+      "visual_verification_date": "2026-11-05",
+      "notes": "625C and 715C entries are averages for 6.35 and 6.71 wt.% Al alloys (table footnote). 750C and 775C are the 6.71 wt.% alloy. No uncertainty is printed for k in this table.",
+      "file_identity_basis": "Pinned SHA256 and size of the PDF visually inspected on 2026-11-05; not computed from an absent file.",
+      "visual_verification_scope": "Historical visual inspection of the identified PDF and cited table; not repeated by this report generator.",
+      "local_file_check": {
+        "status": "matches_historically_verified_pdf",
+        "local_pdf_present": true,
+        "sha256_checked": true,
+        "observed_sha256": "b95e147d8ea2ec24709bf71430b55ecd78d616a14b1c7657764790ac62706871",
+        "observed_bytes": 35045906
+      }
+    },
+    "Ardell2011": {
+      "title": "A1-L12 interfacial free energies from data on coarsening in five binary Ni alloys, informed by thermodynamic phase diagram assessments",
+      "author": "A. J. Ardell",
+      "year": 2011,
+      "publication": "Journal of Materials Science 46, 4832-4849",
+      "source_kind": "Published n=3 regression of earlier experimental particle-size data, not an independent new experiment",
+      "doi": "https://doi.org/10.1007/s10853-011-5395-x",
+      "url": "https://d-nb.info/1239497911/34",
+      "local_pdf": "sources/Ardell_2011.pdf",
+      "sha256": "9f7754a3856aa56cdf5bf5abf24d205d4a72e9168c9997424d2d604d6113800d",
+      "bytes": 484750,
+      "location": "Printed p4844 Table6, first two rows; PDF page13 (1-based)",
+      "quantity": "d[mean radius^3]/dt, Table6 n=3 (LSW analysis)",
+      "fit_time_window": "Not separately specified in Table6",
+      "visual_verification": true,
+      "visual_verification_date": "2026-11-05",
+      "notes": "Do not substitute Table5 non-integer-exponent coefficients. Initial alloy composition is not tabulated for each row in Table6; keep the source label Ni-Al rather than assigning exact 14 at.%.",
+      "file_identity_basis": "Pinned SHA256 and size of the PDF visually inspected on 2026-11-05; not computed from an absent file.",
+      "visual_verification_scope": "Historical visual inspection of the identified PDF and cited table; not repeated by this report generator.",
+      "local_file_check": {
+        "status": "matches_historically_verified_pdf",
+        "local_pdf_present": true,
+        "sha256_checked": true,
+        "observed_sha256": "9f7754a3856aa56cdf5bf5abf24d205d4a72e9168c9997424d2d604d6113800d",
+        "observed_bytes": 484750
+      }
+    },
+    "Zhu2004": {
+      "title": "Three-dimensional phase-field simulations of coarsening kinetics of gamma-prime particles in binary Ni-Al alloys",
+      "authors": "J. Z. Zhu, T. Wang, A. J. Ardell, S. H. Zhou, Z. K. Liu, L. Q. Chen",
+      "year": 2004,
+      "publication": "Acta Materialia 52, 2837-2845",
+      "doi": "https://doi.org/10.1016/j.actamat.2004.02.032",
+      "url": "https://citeseerx.ist.psu.edu/document?doi=497199be7d4e6c92bb78cac9d55c995838742321&repid=rep1&type=pdf",
+      "source_kind": "Phase-field article quoting an experimental result; distinguished from its simulated result",
+      "location": "p2843 section3.3; Eq12 and Fig4 (p2844); experimental reference39",
+      "quoted_experimental_source": "Ardell and Nicholson, J Phys Chem Solids 27 (1966), starting p1793, DOI10.1016/0022-3697(66)90110-7",
+      "reported_composition_at_percent_Al": 13.8,
+      "reported_temperature_K": 1023,
+      "quantity": "d[mean cube edge length^3]/dt",
+      "experimental_value_nm3_h": 4600,
+      "simulation_value_nm3_h_excluded": 5570,
+      "notes": "The 13.8 at.% label differs from 6.71 wt.% (~13.53 at.%) in the original author summary. Preserve both labels; do not silently relabel as exact Ni-14 at.% Al."
+    }
+  },
+  "wt_to_at_conversion": {
+    "Al_molar_mass": 26.9815385,
+    "Ni_molar_mass": 58.6934,
+    "6.35wt_at_percent": 12.853939752898034,
+    "6.71wt_at_percent": 13.529397870814197
+  },
+  "conversion_checks": {
+    "cm3_to_nm3": 1e+21,
+    "cm3_to_m3": 1e-06,
+    "nm3_h_to_nm3_s": 0.0002777777777777778,
+    "cube_edge_cubed_to_half_edge_cubed": 0.125,
+    "Zhu_experiment_half_edge_cubed_nm3_s": 0.1597222222222222
+  },
+  "exclusions": [
+    "No diffusion-based theoretical K is recorded as an experimental measurement.",
+    "No interpolation or extrapolation to1000K is labeled as a measured point.",
+    "No population-average experimental slope is labeled as a fixed-single-particle slope.",
+    "Non-integer growth exponent coefficients have different dimensions and are not mixed with n=3 slopes."
+  ]
+}

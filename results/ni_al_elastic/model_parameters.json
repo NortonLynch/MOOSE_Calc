@@ -1,0 +1,27 @@
+{
+  "temperature_K": 1000,
+  "nominal_Al_atomic_fraction": 0.14,
+  "chemical_model": "unchanged lookup nested KKS, inherited from examples/ni_al_lookup/lookup.i",
+  "input_sha256": "6722c07bc293bf7056d89d6900ce7b012f419ce8f2a375a082a70b6746576247",
+  "elastic_data_source": "User attachment plasti.txt; values accepted as supplied, not independently calibrated",
+  "gamma_c11_c12_c44_GPa": [
+    199,
+    143,
+    99
+  ],
+  "gamma_prime_c11_c12_c44_GPa": [
+    207.8,
+    148.8,
+    102.3
+  ],
+  "misfit": 0.0047,
+  "energy_density_scale_J_m3": 142857142.85714287,
+  "GPa_to_dimensionless_factor": 7.0,
+  "attachment_unit_correction": "199 GPa = 1242.0603 eV/nm^3, not 1.242 eV/nm^3; use the supplied GPa values",
+  "boundary": "Periodic c, eta, mu, displacement fluctuations; one point removes translation; global in-plane strain enforces zero volume-average xx, yy, xy stress; epsilon_zz=0 (plane strain)",
+  "orientation": "cubic [100] || x, [010] || y, [001] || z, common orientation",
+  "energy": "C(eta)=(1-h)C_gamma+h C_gamma_prime; epsilon0=0.0047 h I; f_el=0.5 (epsilon-epsilon0):C:(epsilon-epsilon0)",
+  "coupling": "AllenCahn derivative of f_el added to eta equation; stress equilibrium solved simultaneously; f_el has no explicit c dependence, so KKS chemical partition is unchanged at fixed eta",
+  "time_mapping": "Literature-model calibration in time_calibration.json: Engstrom-Agren fcc mobilities + current gamma Hermite curvature; not direct experimental calibration.",
+  "numerical_solver": "PJFNK; full SMP preconditioning, MUMPS, automatic scaling recalculated every step; implicit Euler; original time sequence with cutback on failure; production 8 MPI ranks."
+}

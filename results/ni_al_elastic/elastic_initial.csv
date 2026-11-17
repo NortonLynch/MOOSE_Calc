@@ -1,0 +1,3 @@
+time,elastic_energy,global_strain_0,global_strain_1,global_strain_2,mean_c,mean_gamma_prime_fraction,mean_stress_xx_scaled,mean_stress_xy_scaled,mean_stress_yy_scaled,mean_stress_zz_scaled,total_energy
+0,0,0,0,0,0.14,0.13774388273305,0,0,0,0,35.902629820995
+1,30.80032291775,0.00092313446833218,0.00092306428209642,5.3255995179675e-19,0.14,0.13774388273305,-1.9122049622745e-14,1.2844663604344e-15,-1.7206143917055e-14,-0.37609155315158,66.702952738745

@@ -1,0 +1,440 @@
+{
+  "time_calibration": {
+    "status": "literature_model_calibration_not_direct_experimental_validation",
+    "primary_model": "Engstrom & Agren 1996 fcc mobilities, reproduced in Zhang et al. 2010 Table 3 rows [16,22]",
+    "primary_doi": "https://doi.org/10.1515/ijmr-1996-870205",
+    "parameter_source_doi": "https://doi.org/10.3139/146.110428",
+    "independent_parameter_crosscheck": "NIST C.E. Campbell, Re-assessment of gamma prime (L12-Ni3Al), July 9 2008, Disordered FCC table; same Engstrom-Agren parameters (exponential prefactors versus rounded linear T coefficients).",
+    "independent_parameter_crosscheck_url": "https://materialsdata.nist.gov/bitstream/handle/11115/51/Re-assessment-l12-7-08.pdf?isAllowed=y&sequence=4",
+    "parameter_source_pdf": "https://www.researchgate.net/profile/Lijun-Zhang-46/publication/273970625_Atomic_mobilities_and_diffusivities_in_the_fcc_L12_and_B2_phases_of_the_Ni-Al_system/links/5526789b0cf2628d5afdfd6b/Atomic-mobilities-and-diffusivities-in-the-fcc-L12-and-B2-phases-of-the-Ni-Al-system.pdf",
+    "temperature_K": 1000.0,
+    "calibration_gamma_Al_atomic_fraction": 0.12464386636371319,
+    "thermodynamics": "Thermo-Calc Educational 2026b NIDEMO 2.0 exported gamma Hermite table; retained unchanged",
+    "gamma_Gm_second_derivative_J_mol": 347971.5657655558,
+    "Al_tracer_diffusivity_m2_s": 1.3485728659756029e-18,
+    "Ni_tracer_diffusivity_m2_s": 1.1144274871996776e-18,
+    "thermodynamic_factor": 4.56630865172143,
+    "gamma_chemical_interdiffusivity_m2_s": 6.024733207758793e-18,
+    "dimensionless_mobility": 0.002873786184560299,
+    "length_scale_m": 1e-09,
+    "molar_energy_scale_J_mol": 1000.0,
+    "time_scale_s_per_model_unit": 0.16598176945479537,
+    "end_time_s": 9958.906167287721,
+    "end_time_hours": 2.766362824246589,
+    "formula_D": "Dchem = ((1-c)*DAl_tracer+c*DNi_tracer)*c*(1-c)*Gm_second_derivative/(R*T)",
+    "formula_time": "t_seconds=t_star*Mstar*(Gm_second_derivative/G0)*length_scale_m^2/Dchem",
+    "formula_rate": "K_nm3_s=K_nm3_per_model_time/time_scale_s_per_model_unit; K_m3_s=K_nm3_s*1e-27",
+    "alternative_zhang_2010_Dchem_m2_s": 4.5539420065111936e-18,
+    "alternative_zhang_2010_time_scale_s": 0.21958906742489978,
+    "scope": [
+      "1000 K evaluation of published high-temperature mobility assessment; extrapolation uncertainty is not quantified.",
+      "Darken form with constant molar volume; vacancy-wind/correlation correction omitted as in the mobility framework.",
+      "Mobilities and current NIDEMO thermodynamic factor are combined; this is not an exact reproduction of the original assessed thermodynamic database.",
+      "Constant original Mstar and Lstar retained for comparison. This rescales the entire simulation, not a spatially composition-dependent mobility simulation.",
+      "The original single constant mobility is used across both phases; gamma-prime ordered-phase mobility has not been independently calibrated. The time scale anchors matrix diffusion only.",
+      "Elastic stress does not independently modify diffusivity in this model.",
+      "Janssen temperature range is 1000-1300 degrees C, not 1000 K; no single measurement at 1000 K has been asserted."
+    ]
+  },
+  "fits": {
+    "no_elastic": [
+      {
+        "window": "5000-30000",
+        "lo_star": 5009.2099975586,
+        "hi_star": 29980.109096527,
+        "samples": 96,
+        "K_nm3_s": -0.005444505490068656,
+        "K_m3_s": -5.444505490068656e-30,
+        "intercept_nm3": 968.312978078811,
+        "R_squared_time_weighted": 0.9546582338549487,
+        "RMSE_nm3": 1.4198349851548742,
+        "particle_counts": [
+          4
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 831.4375389654276,
+        "hi_s": 4976.151556289358,
+        "lo_h": 0.23095487193484102,
+        "hi_h": 1.3822643211914885,
+        "K_nm3_per_model_time": -0.0009036886550479434
+      },
+      {
+        "window": "10000-40000",
+        "lo_star": 10263.936682129,
+        "hi_star": 39971.27399385,
+        "samples": 122,
+        "K_nm3_s": -0.009644808571371332,
+        "K_m3_s": -9.644808571371331e-30,
+        "intercept_nm3": 981.8876407936798,
+        "R_squared_time_weighted": 0.9280615392531758,
+        "RMSE_nm3": 3.8225358036116246,
+        "particle_counts": [
+          4
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 1703.6263720717532,
+        "hi_s": 6634.502784861669,
+        "lo_h": 0.4732295477977092,
+        "hi_h": 1.8429174402393524,
+        "K_nm3_per_model_time": -0.0016008623927289906
+      },
+      {
+        "window": "50000-60000",
+        "lo_star": 50076.937025108,
+        "hi_star": 60000.0,
+        "samples": 36,
+        "K_nm3_s": 0.24326241593053233,
+        "K_m3_s": 2.432624159305323e-28,
+        "intercept_nm3": -835.8178112420105,
+        "R_squared_time_weighted": 0.2762871903247477,
+        "RMSE_nm3": 187.66036336066267,
+        "particle_counts": [
+          3,
+          4
+        ],
+        "crosses_particle_loss": true,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 8311.858616303783,
+        "hi_s": 9958.906167287721,
+        "lo_h": 2.30884961563994,
+        "hi_h": 2.766362824246589,
+        "K_nm3_per_model_time": 0.040377126237998155
+      },
+      {
+        "window": "5000-60000",
+        "lo_star": 5009.2099975586,
+        "hi_star": 60000.0,
+        "samples": 210,
+        "K_nm3_s": 0.037491975692044086,
+        "K_m3_s": 3.7491975692044087e-29,
+        "intercept_nm3": 807.3816234305506,
+        "R_squared_time_weighted": 0.23643283961215988,
+        "RMSE_nm3": 177.53463886093328,
+        "particle_counts": [
+          3,
+          4
+        ],
+        "crosses_particle_loss": true,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 831.4375389654276,
+        "hi_s": 9958.906167287721,
+        "lo_h": 0.23095487193484102,
+        "hi_h": 2.766362824246589,
+        "K_nm3_per_model_time": 0.006222984465721653
+      },
+      {
+        "window": "constant_N4_0_207",
+        "lo_star": 5009.2099975586,
+        "hi_star": 51105.916653236,
+        "samples": 185,
+        "K_nm3_s": -0.017795869042769755,
+        "K_m3_s": -1.7795869042769755e-29,
+        "intercept_nm3": 1005.491758105573,
+        "R_squared_time_weighted": 0.6977158649082826,
+        "RMSE_nm3": 25.87274659546386,
+        "particle_counts": [
+          4
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 831.4375389654276,
+        "hi_s": 8482.650475713406,
+        "lo_h": 0.23095487193484102,
+        "hi_h": 2.3562917988092793,
+        "K_nm3_per_model_time": -0.0029537898327047394
+      },
+      {
+        "window": "constant_N3_208_232",
+        "lo_star": 51132.271327176,
+        "hi_star": 60000.0,
+        "samples": 25,
+        "K_nm3_s": -0.001512478184921738,
+        "K_m3_s": -1.512478184921738e-30,
+        "intercept_nm3": 1475.947595542025,
+        "R_squared_time_weighted": 0.012319859509487108,
+        "RMSE_nm3": 5.7740240660791144,
+        "particle_counts": [
+          3
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 8487.02487112737,
+        "hi_s": 9958.906167287721,
+        "lo_h": 2.3575069086464917,
+        "hi_h": 2.766362824246589,
+        "K_nm3_per_model_time": -0.00025104380539508727
+      }
+    ],
+    "elastic": [
+      {
+        "window": "5000-30000",
+        "lo_star": 5009.2099975586,
+        "hi_star": 29980.109096527,
+        "samples": 96,
+        "K_nm3_s": -0.01922135273847597,
+        "K_m3_s": -1.922135273847597e-29,
+        "intercept_nm3": 937.2237241442307,
+        "R_squared_time_weighted": 0.8944222203022253,
+        "RMSE_nm3": 7.902292466452131,
+        "particle_counts": [
+          4
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 831.4375389654276,
+        "hi_s": 4976.151556289358,
+        "lo_h": 0.23095487193484102,
+        "hi_h": 1.3822643211914885,
+        "K_nm3_per_model_time": -0.0031903941388470177
+      },
+      {
+        "window": "10000-40000",
+        "lo_star": 10263.936682129,
+        "hi_star": 39888.142575598,
+        "samples": 122,
+        "K_nm3_s": 0.053330417001972316,
+        "K_m3_s": 5.333041700197231e-29,
+        "intercept_nm3": 704.6714229056361,
+        "R_squared_time_weighted": 0.1735649520634931,
+        "RMSE_nm3": 165.19501998991086,
+        "particle_counts": [
+          3,
+          4
+        ],
+        "crosses_particle_loss": true,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 1703.6263720717532,
+        "hi_s": 6620.704484962915,
+        "lo_h": 0.4732295477977092,
+        "hi_h": 1.8390845791563653,
+        "K_nm3_per_model_time": 0.008851876979749469
+      },
+      {
+        "window": "50000-60000",
+        "lo_star": 50041.865958033,
+        "hi_star": 60000.0,
+        "samples": 35,
+        "K_nm3_s": 1.1758134173215646,
+        "K_m3_s": 1.1758134173215647e-27,
+        "intercept_nm3": -8654.753177735913,
+        "R_squared_time_weighted": 0.6343564420067593,
+        "RMSE_nm3": 426.9491760663913,
+        "particle_counts": [
+          2,
+          3
+        ],
+        "crosses_particle_loss": true,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 8306.037458534005,
+        "hi_s": 9958.906167287721,
+        "lo_h": 2.307232627370557,
+        "hi_h": 2.766362824246589,
+        "K_nm3_per_model_time": 0.19516359155572305
+      },
+      {
+        "window": "5000-60000",
+        "lo_star": 5009.2099975586,
+        "hi_star": 60000.0,
+        "samples": 209,
+        "K_nm3_s": 0.1459046532122775,
+        "K_m3_s": 1.459046532122775e-28,
+        "intercept_nm3": 404.9984071706401,
+        "R_squared_time_weighted": 0.4949170904532698,
+        "RMSE_nm3": 388.3819412627212,
+        "particle_counts": [
+          2,
+          3,
+          4
+        ],
+        "crosses_particle_loss": true,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 831.4375389654276,
+        "hi_s": 9958.906167287721,
+        "lo_h": 0.23095487193484102,
+        "hi_h": 2.766362824246589,
+        "K_nm3_per_model_time": 0.024217512511862112
+      },
+      {
+        "window": "constant_N4_0_139",
+        "lo_star": 5009.2099975586,
+        "hi_star": 35152.730676651,
+        "samples": 117,
+        "K_nm3_s": -0.03151919559385459,
+        "K_m3_s": -3.151919559385459e-29,
+        "intercept_nm3": 966.5441266079414,
+        "R_squared_time_weighted": 0.769079326693801,
+        "RMSE_nm3": 24.946994952704923,
+        "particle_counts": [
+          4
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 831.4375389654276,
+        "hi_s": 5834.7124388784,
+        "lo_h": 0.23095487193484102,
+        "hi_h": 1.620753455244,
+        "K_nm3_per_model_time": -0.005231611856459774
+      },
+      {
+        "window": "constant_N3_140_217",
+        "lo_star": 35349.782927323,
+        "hi_star": 53090.502513359,
+        "samples": 78,
+        "K_nm3_s": -0.11687706243220607,
+        "K_m3_s": -1.1687706243220607e-28,
+        "intercept_nm3": 2087.7206612330756,
+        "R_squared_time_weighted": 0.8550351356501519,
+        "RMSE_nm3": 40.92067633829524,
+        "particle_counts": [
+          3
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 5867.419520119988,
+        "hi_s": 8812.055548411588,
+        "lo_h": 1.6298387555888856,
+        "hi_h": 2.447793207892108,
+        "K_nm3_per_model_time": -0.019399461631176153
+      },
+      {
+        "window": "constant_N2_218_231",
+        "lo_star": 53198.606201954,
+        "hi_star": 60000.0,
+        "samples": 14,
+        "K_nm3_s": 0.033503509695377416,
+        "K_m3_s": 3.350350969537742e-29,
+        "intercept_nm3": 2243.132101099422,
+        "R_squared_time_weighted": 0.42690506369204784,
+        "RMSE_nm3": 12.727657635905686,
+        "particle_counts": [
+          2
+        ],
+        "crosses_particle_loss": false,
+        "interpretation": "descriptive effective slope; not a validated 3D LSW rate constant",
+        "lo_s": 8829.998789929175,
+        "hi_s": 9958.906167287721,
+        "lo_h": 2.4527774416469934,
+        "hi_h": 2.766362824246589,
+        "K_nm3_per_model_time": 0.005560971822184636
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "radius_definition": "R_i=sqrt(integral_over_seed_quadrant h(eta) dA/pi), present if max eta >=0.5; number average over surviving particles, then cubed; 2D area-equivalent radius",
+  "regression": "time-weighted least squares (trapezoidal weights) prevents adaptive output clusters from dominating; no forced zero intercept",
+  "no_elastic": {
+    "saved_frames": 233,
+    "accepted_steps": 1157,
+    "end_time_star": 60000.0,
+    "end_time_h": 2.766362824246589,
+    "initial_mean_R_nm": 10.032787393984522,
+    "final_mean_R_nm": 11.335757898982715,
+    "initial_mean_R_cubed_nm3": 1009.868503838367,
+    "final_mean_R_cubed_nm3": 1456.6381695511502,
+    "final_count": 3,
+    "radii_final_nm": [
+      2.8316998103449854e-09,
+      9.236205911202681,
+      11.926841803814723,
+      12.844225981930743
+    ],
+    "max_mass_error": 0.0,
+    "max_nodal_integrated_mass_error": 2.7755575615628914e-17,
+    "initial_energy_integral_scaled": 35.902629820995,
+    "final_energy_integral_scaled": 30.243175248126,
+    "maximum_energy_increase_scaled": 0.0,
+    "dissolution_brackets_star": {
+      "1": [
+        51105.916653236,
+        51132.271327176
+      ],
+      "2": null,
+      "3": null,
+      "4": null
+    },
+    "c_gamma_final_core_mean": 0.12497012967919024,
+    "c_gamma_output_range": [
+      0.12211020320803856,
+      0.13512163783286282
+    ],
+    "c_gamma_prime_final_core_mean": 0.23741138363118527,
+    "c_gamma_prime_output_range": [
+      0.23482473452597616,
+      0.24313538062138723
+    ],
+    "final_area_fraction": 0.13380784744384921,
+    "P4_final_shape": {
+      "centroid_nm": [
+        71.9999999999998,
+        71.99999999999987
+      ],
+      "axis_radius_nm": 12.835780548130069,
+      "diagonal_radius_nm": 12.794938489517293,
+      "diagonal_axis_ratio": 0.9968181086876928,
+      "definition": "eta=0.5 directional radii; diagonal mean / x-y-axis mean; 1 for a circle; P4 only"
+    }
+  },
+  "elastic": {
+    "saved_frames": 232,
+    "accepted_steps": 1153,
+    "end_time_star": 60000.0,
+    "end_time_h": 2.766362824246589,
+    "initial_mean_R_nm": 10.032787393984522,
+    "final_mean_R_nm": 13.689184500051706,
+    "initial_mean_R_cubed_nm3": 1009.868503838367,
+    "final_mean_R_cubed_nm3": 2565.2679228530787,
+    "final_count": 2,
+    "radii_final_nm": [
+      6.545096305943642e-10,
+      7.091776361598918e-07,
+      11.739787009242137,
+      15.638581990861272
+    ],
+    "max_mass_error": 0.0,
+    "max_nodal_integrated_mass_error": 2.3592239273284576e-15,
+    "initial_energy_integral_scaled": 66.702952738745,
+    "final_energy_integral_scaled": 52.435214421693,
+    "maximum_energy_increase_scaled": 0.0,
+    "dissolution_brackets_star": {
+      "1": [
+        35152.730676651,
+        35349.782927323
+      ],
+      "2": [
+        53090.502513359,
+        53198.606201954
+      ],
+      "3": null,
+      "4": null
+    },
+    "max_average_inplane_stress_MPa": 1.0133720064585859e-07,
+    "c_gamma_final_core_mean": 0.1253644055981628,
+    "c_gamma_output_range": [
+      0.12211020320803856,
+      0.1277914344661321
+    ],
+    "c_gamma_prime_final_core_mean": 0.23773323198243065,
+    "c_gamma_prime_output_range": [
+      0.23482473452597616,
+      0.23944449155252512
+    ],
+    "final_area_fraction": 0.13035013529687067,
+    "P4_final_shape": {
+      "centroid_nm": [
+        71.99999999999183,
+        71.99999999999307
+      ],
+      "axis_radius_nm": 15.05273364923018,
+      "diagonal_radius_nm": 16.20640979752692,
+      "diagonal_axis_ratio": 1.0766423013374544,
+      "definition": "eta=0.5 directional radii; diagonal mean / x-y-axis mean; 1 for a circle; P4 only"
+    }
+  },
+  "integration_time_grid_comparison": {
+    "identical_accepted_grid": false,
+    "same_prescribed_schedule": "Both start from the original baseline time sequence. Nonlinear failures may subdivide accepted steps, so this does not guarantee identical accepted grids near dissolution.",
+    "identical_through_30000": true
+  }
+}

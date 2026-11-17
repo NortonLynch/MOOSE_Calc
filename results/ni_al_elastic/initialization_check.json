@@ -1,0 +1,19 @@
+{
+  "initial_eta_c_max_error_against_lookup": {
+    "c": 0.0,
+    "eta": 0.0
+  },
+  "global_inplane_strain": [
+    0.0009231344683321,
+    0.0009230642820964,
+    5.3255995179674995e-19
+  ],
+  "initial_elastic_energy_scaled_integral": 30.80032291775,
+  "initial_average_stress_scaled": {
+    "xx": -1.9122049622745e-14,
+    "yy": -1.7206143917055e-14,
+    "xy": 1.2844663604344e-15,
+    "zz": -0.37609155315158
+  },
+  "mechanical_relaxation_does_not_advance_diffusion_time": true
+}
